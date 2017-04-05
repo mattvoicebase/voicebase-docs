@@ -41,6 +41,7 @@ More information and guidances can be found in the:
   how-to-guides/priority
   how-to-guides/pci-ssn-pii-detection
   how-to-guides/pci-ssn-pii-redaction
+  how-to-guides/custom-vocabulary
 
 .. _api-reference:
 

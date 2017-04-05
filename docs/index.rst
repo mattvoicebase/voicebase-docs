@@ -41,10 +41,6 @@ More information and guidances can be found in the:
   how-to-guides/priority
   how-to-guides/pci-ssn-pii-detection
   how-to-guides/pci-ssn-pii-redaction
-  .. Not yet ready for publication
-  how-to-guides/aligner
-  how-to-guides/s3-callbacks
-  how-to-guides/custom-vocabulary
 
 .. _api-reference:
 

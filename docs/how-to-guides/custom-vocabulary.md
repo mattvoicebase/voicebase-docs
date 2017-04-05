@@ -37,7 +37,7 @@ When processed with the Custom Vocabulary configuration, the returned transcript
 
 “Hi, this is Bryon from VoiceBase.”
 
-## Upload Scenarios:
+
 
 There are two ways to upload custom vocabulary terms to VoiceBase:
 

@@ -29,7 +29,7 @@ Semantic keywords and topics are discovered automatically (for languages where t
 }
 ```
 
-In this example, the keyword "subscription" was spoken by the caller around 34 and 57 seconds into the recording, and by the agent around 40 seconds into the recoding.
+In this example, the keyword "subscription" was spoken by the caller around 34 and 57 seconds into the recording, and by the agent around 40 seconds into the recording.
 
 ## Managing Keyword Groups
 
@@ -49,6 +49,27 @@ curl https://apis.voicebase.com/v2-beta/definitions/keywords/groups/data \
   --data '{ "name" : "data", "keywords" : [ "data science", "big data", "data mining" ] }' \
   --header "Authorization: Bearer ${TOKEN}"
 ```
+## Displaying Keyword Groups
+
+To display keyword groups that you have created make the following GET request using curl, or an equivalent request using a tool of your choice:
+
+```bash
+curl https://apis.voicebase.com/v2-beta/definitions/keywords/groups/data \
+  --request GET \
+  --header "Authorization: Bearer ${TOKEN}"
+```
+
+The response will look like the following:
+
+```json
+{
+	"name": "data",
+	"revision": "24f20f87-e05d-437a-8436-38e16280d464",
+	"keywords": [ "data science", "big data", "data mining" ]
+}
+```
+
+Revision is the uniqueID that VoiceBase uses applies to each keyword group that can be used to monitor the group.
 
 ## Enabling Keyword Spotting
 
@@ -122,7 +143,6 @@ curl https://apis.voicebase.com/v2-beta/media \
   --form 'configuration={ "configuration": { "keywords": { "groups": [ "data" ] } } }'
 ```
 
-
 ### Example: Disabling semantic keywords and topics
 
 The following is an example of posting a media document with semantic `keywords` and `topics` extraction disabled.
@@ -132,7 +152,7 @@ curl https://apis.voicebase.com/v2-beta/media \
   --header "Authorization: Bearer $TOKEN" \
   --form media=@recording.mp3 \
   --form 'configuration={"configuration":{
-    "keywords":{ "semantic": true },
-    "topics":{ "semantic": true }
+    "keywords":{ "semantic": false },
+    "topics":{ "semantic": false }
   }}'
 ```

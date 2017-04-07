@@ -36,33 +36,22 @@ A plain-text transcript with number formatting enabled:
 >Hi this is Brian from VoiceBase please give me a call back at 650-248-9652 thank you.
 
 And an excerpt of the number-formatted JSON response:
+For simplicity, start time, end time, & confidence key-values are omitted.
 ```json
           {
             "p": 12,
-            "s": 4060,
-            "c": 0.917,
-            "e": 4320,
             "w": "call"
           },
           {
             "p": 13,
-            "s": 4320,
-            "c": 0.728,
-            "e": 4669,
             "w": "back"
           },
           {
             "p": 14,
-            "s": 4700,
-            "c": 0.658,
-            "e": 4980,
             "w": "at"
           },
           {
             "p": 15,
-            "s": 5010,
-            "c": 0.95,
-            "e": 9970,
             "w": "650-248-9652"
           },
 ```

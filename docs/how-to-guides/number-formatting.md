@@ -1,6 +1,6 @@
 # Number Formatting
 
-VoiceBase has the ability to have numbers found in the transcription be displayed in digit form.
+VoiceBase can transcribe numbers found in the transcription be displayed in digit form.
 
 To enable number-formatting, include the following snippet in your configuration:
 
@@ -22,7 +22,7 @@ Additionally, VoiceBase can detect phone numbers and format them into a US phone
 
 Without number formatting enabled, a plain-text response will look like:
 
->Hi this is Brian from VoiceBase please give me a call back at six five zero two four eight nine six five two thank you. Goodbye.
+>Hi this is Brian from VoiceBase please give me a call back at six five zero two four eight nine six five two thank you.
 
 And an excerpt of the JSON transcript response would look like:
 ```json
@@ -121,7 +121,7 @@ And an excerpt of the JSON transcript response would look like:
 
 A plain-text response with number formatting enabled:
 
->Hi this is Brian from VoiceBase please give me a call back at 650-248-9652 thank you. Goodbye.
+>Hi this is Brian from VoiceBase please give me a call back at 650-248-9652 thank you.
 
 And an excerpt of the number-formatted JSON response:
 ```json

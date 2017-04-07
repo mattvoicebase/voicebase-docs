@@ -3,7 +3,7 @@
 
 Voicebase has a unique feature that can increase the possibility of terms or phrases being transcribed by the VoiceBase speech engine resulting in better accuracy.
 
-The feature is used to preferentially transcribe:
+The feature will increase the liklihood of recognition and transcription of:
 
 * Jargon
 * Proper Nouns (Names, Companies, etc.)
@@ -12,13 +12,14 @@ The feature is used to preferentially transcribe:
 * Hyphenated words 
 * Multi-word phrases
 
-For example, company names, last name or alternative spellings may not be present in the standard dictionary. Those can be added and given preferential treatment to be transcribed. Words that already exist in the dictionary can be added to custom vocabulary to give them preferential treatment to be transcribed.
+
+Non-dictionary words such as company names, last name or alternative spellings may not be present in the standard dictionary. Those can be added and given preferential treatment to be transcribed. Words that already exist in the dictionary can be added to custom vocabulary to give them preferential treatment to be transcribed.
 
 Upon a standard configuration, a submitted audio file may return a transcript such as:
 
 “Hi this is Brian from voice space.”
 
-However using Custom Vocabulary, we can specify that we would want the company name “VoiceBase” to be recognized.  We can do so using the ad-hoc method of Custom Vocabulary below:
+However, using Custom Vocabulary, we can specify that we would want the company name “VoiceBase” to be recognized.  We can do so using the ad-hoc method of Custom Vocabulary below:
 
 ```json
 { "configuration": 
@@ -46,7 +47,7 @@ Note: The greater the amount of custom vocabulary terms the greater the chance t
 
 There are two ways to upload custom vocabulary terms to VoiceBase:
 
-### Ad-hoc Scenario 
+### Ad-Hoc Scenario 
 
 If you have a voice file to transcribe and want to add ad hoc custom terms specifically for that file, upload the file with the following configuration:
 ```json

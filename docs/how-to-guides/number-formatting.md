@@ -18,25 +18,27 @@ Number formatting allows options for transcription preference around phone numbe
 
 For example, with a default configuration, a transcript might read:
 
->Agent: The total of your bill comes to one hundred thirty eight dollars and sixty five cents
+>"**Agent:** The total of your bill comes to one hundred thirty eight dollars and sixty five cents"
 
 When number formatting is enabled it will read:
 
->Agent: The total of your bill comes to $138.65
+>"**Agent:** The total of your bill comes to $138.65"
 
 Additionally, VoiceBase can detect phone numbers and format them into a US phone number format within the transcript.
 
 Without number formatting enabled, a plain-text transcript will look like:
 
->Hi this is Brian from VoiceBase please give me a call back at six five zero two four eight nine six five two thank you.
+>"Hi this is Brian from VoiceBase please give me a call back at six five zero two four eight nine six five two thank you."
 
 
 A plain-text transcript with number formatting enabled:
 
->Hi this is Brian from VoiceBase please give me a call back at 650-248-9652 thank you.
+>"Hi this is Brian from VoiceBase please give me a call back at 650-248-9652 thank you."
 
 And an excerpt of the number-formatted JSON response:
-For simplicity, start time, end time, & confidence key-values are omitted.
+
+For simplicity the following keys & respective values have been omitted - start time ('s'), end time ('e'), confidence ('c').
+
 ```json
           {
             "p": 12,

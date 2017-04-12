@@ -2,7 +2,6 @@
 
 Once processing is complete, transcripts can be retrieved in several formats.
 
-
 ## JSON Transcript
 
 Retrieve a JSON-formatted transcript with metadata using a `GET` against the `transcripts` collection under the `media` item. By convention, the transcript for most common scenarios is called `latest`.
@@ -88,4 +87,9 @@ curl https://apis.voicebase.com/v2-beta/media/$MEDIA_ID/transcripts/latest \
     --header "Accept: text/srt"
 ```
 
+
+
+
+
+_Attribution:_ SRT and Plaintext transcripts are generated from Audible dictation of [Crucial Conversations](http://www.audible.com/pd/Business/Crucial-Conversations-Audiobook/B009RQZDHS?source_code=GPAGBSH0508140001&mkwid=sDishsy3J_dc&pcrid=90539104740&pmt=&pkw=&cvosrc=ppc%20cse.google%20shopping.342766860&cvo_crid=90539104740&cvo_pid=23455575420) under fair-use.
 The [closed captioning](closed-captioning.html) section has a detailed discussion of the SRT transcript format.

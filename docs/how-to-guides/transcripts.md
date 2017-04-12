@@ -27,11 +27,11 @@ In this example, the agent spoke first, and said "Hello" and the caller spoke se
 Speaker identification is enabled by multi-channel audio, where each channel is associated with a specific speaker. For more information on how to use multi-speaker audio, see the [stereo](stereo.md) section.
 
 ###### How to read it
-* "p" = Position (Word # in the transcript)
-* "c" = Confidence (A value between 0-1 that relates to the confidence percent ex: 0.88 = 88%.  When "m" is present the confidence score is arbitrary)
+* "p" = Position (word # in the transcript)
+* "c" = Confidence (A value between 0-1 that relates to the confidence percent ex: 0.88 = 88%.  When the metadata flag is present confidence contains an arbireary value.)
 * "s" = Start time (milliseconds)
 * "e" = End time (milliseconds)
-* "w" = The word itself (When "m" is present "w" refers to the speaker)
+* "w" = The word itself (When the metadata flag is present "w" refers to the speaker)
 * "m" = metadata (In this case when "m": "turn" it is detecting a change in speaker)
 
 ```json

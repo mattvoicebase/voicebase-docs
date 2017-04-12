@@ -2,14 +2,6 @@
 
 Once processing is complete, transcripts can be retrieved in several formats.
 
-Note: Export a mediaId and your api token prior to running any of the following examples.
-
-```bash
-export MEDIA_ID='The media id of a \
-    processed media file (`status` = `finished`)'
-export TOKEN='Your Api Token'
-```
-
 
 ## JSON Transcript
 

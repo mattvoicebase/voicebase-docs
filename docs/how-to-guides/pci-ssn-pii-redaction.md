@@ -125,7 +125,7 @@ curl https://apis.voicebase.com/v2-beta/media \
 #### Redacted Audio Request
 
 ```bash
-curl https://apis.voicebase.com/v2-beta/${MEDIA_ID}/streams \
+curl https://apis.voicebase.com/v2-beta/media/${MEDIA_ID}/streams \
   --header "Authorization: Bearer ${TOKEN}"
 ```
 
